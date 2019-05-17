@@ -8,7 +8,7 @@
 import Foundation
 import Vapor
 
-struct ActiveJobs {
+struct ActiveJobs: Content {
     var master: Job?
     var releases: [Job]
     var pullRequests: [Job]
@@ -42,5 +42,3 @@ struct ActiveJobs {
     }
 
 }
-
-extension ActiveJobs: Content { }
